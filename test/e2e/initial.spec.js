@@ -1,7 +1,7 @@
 // Describe a feature
 describe('My app has three tabs and can navigate', function() {
   it('start in Dashboard', function() {
-    browser.get('http://localhost:8100');
+    //browser.get('http://localhost:8100');
     var mytitle = element(by.css('.title'));
     expect(mytitle.getText()).toEqual('Dashboard');
 
@@ -13,7 +13,7 @@ describe('My app has three tabs and can navigate', function() {
     // expect(todoList.get(2).getText()).toEqual('write a protractor test');
   });
   it('can go to friends', function() {
-    browser.get('http://localhost:8100');
+    
     //click in the Friends icon
     element(by.css('.ion-heart')).click();
     //Then i should be on the Friends tab
@@ -22,7 +22,6 @@ describe('My app has three tabs and can navigate', function() {
 
   });
   it('can go to acount', function() {
-    browser.get('http://localhost:8100');
     //click in the Friends icon
     element(by.css('.ion-gear-b')).click();
     //Then i should be on the Friends tab
@@ -31,13 +30,11 @@ describe('My app has three tabs and can navigate', function() {
 
   });
   it('can go back to dashboard', function() {
-    browser.get('http://localhost:8100');
     //click in the Friends icon
     element(by.css('.ion-home')).click();
     //Then i should be on the Friends tab
     var mytitle = element(by.css('.title'));
     expect(mytitle.getText()).toEqual('Dashboard');
-
   });
 
  

@@ -1,0 +1,13 @@
+Test helping doc
+
+Thing to install once(from the project directory)
+  1-Protactor (Angularjs e2e test suite)  
+  sudo npm install -g protractor
+  2- Web driver
+  webdriver-manager update
+
+To execute the test 
+  In one terminal you must launch the server and keep it up
+    ionic serve
+  In another terminal you run protractor with our config file
+    protractor test/protractor.config.js
