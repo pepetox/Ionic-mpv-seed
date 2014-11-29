@@ -1,7 +1,6 @@
 Ionic-mpv-seed
 ==============
 
-A litle bit 
 
 This ionic seed is the best friend of rails-mpv-seed.
 
